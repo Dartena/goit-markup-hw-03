@@ -40,12 +40,16 @@
   border-bottom: var(--header-border);
 }
 
+.header .container {
+  display: flex;
+  justify-content: space-between;
+}
 .navigation {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.172;
   letter-spacing: 0.02em;
-  display: inline-block;
+  display: flex;
 }
 
 .logo {
@@ -79,11 +83,11 @@
   padding-bottom: 32px;
   margin: 0;
 
-  display: inline-block;
+  display: flex;
 }
 
 .nav-list-links {
-  display: inline-block;
+  /* display: inline-block; */
   margin-right: 50px;
 }
 
@@ -163,8 +167,11 @@
   display: none;
 }
 
+.advantages-list {
+  display: flex;
+}
+
 .advantages-list-item {
-  display: inline-block;
   width: 270px;
 }
 .advantages-list li:not(:last-child) {
@@ -204,7 +211,7 @@
 }
 
 .work-type-list {
-  display: inline-block;
+  display: flex;
   margin: 0;
   padding: 0;
 }
@@ -222,6 +229,10 @@
 
 .s4 {
   background-color: #f5f4fa;
+}
+
+.team-list {
+  display: flex;
 }
 
 .team-tile {
@@ -294,6 +305,16 @@
 
 /* PORTFOLIO STYLES*/
 
+.filter-button-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filter-button-list li:not(:last-child) {
+  margin-right: 8px;
+}
+
 .filter-button {
   color: var(--black);
   font-weight: 500;
@@ -310,9 +331,19 @@
   color: var(--white);
 }
 
+.portf-tile-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
 .portf-tile {
   width: 370px;
   border: var(--portf-tile-border);
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
 .project-name {
