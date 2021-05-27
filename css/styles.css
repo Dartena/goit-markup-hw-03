@@ -43,6 +43,7 @@
 .header .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .navigation {
   font-weight: 500;
